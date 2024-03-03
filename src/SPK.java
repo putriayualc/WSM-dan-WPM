@@ -40,7 +40,7 @@ public class SPK {
         System.out.println("_____________________________________");
         System.out.println("                 WSM            WPM");
         for (Apartemen p : apt) {
-            System.out.printf("%s    %.4f         %.4f\n", p.getWSM(), p.getWPM());
+            System.out.printf("%s    %.4f         %.4f\n", p.getNama(), p.getWSM(), p.getWPM());
         }
         System.out.println("_____________________________________");
         System.out.println("Jadi alternatif terbaik yaitu " + maxWPM(apt).getNama());
