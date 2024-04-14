@@ -25,7 +25,7 @@ public class SPK {
            System.out.print("Keamanan Apartemen "+ (i+1) +" (1-4)   : ");
            int keamanan = sc.nextInt();
 
-           apt[i] = new Apartemen(harga, tahun, fasilitas, keamanan, jarak, ("Apartemen " + i));
+           apt[i] = new Apartemen(harga, tahun, fasilitas, keamanan, jarak, ("Apartemen " + (i+1)));
         };
         System.out.println("__________________________________");
 
@@ -176,6 +176,7 @@ public class SPK {
         for (int i = 0; i < apt.length; i++) {
             if (apt[i].getWPM() > max) {
                 mx = apt[i];
+                max = apt[i].getWPM();
             }
         }
         return mx;
